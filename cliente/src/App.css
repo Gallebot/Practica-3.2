@@ -71,3 +71,19 @@ button:hover {
 .task .remove-btn:hover {
   background-color: #960018;
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .task-list, .task-creation {
+    width: 100%; /* Aumenta el ancho en dispositivos más pequeños */
+  }
+
+  .task {
+    flex-direction: column; /* Cambia la dirección para apilar los elementos verticalmente */
+    align-items: stretch; /* Estira los hijos para que ocupen todo el ancho disponible */
+  }
+
+  button, textarea {
+    width: 100%; /* Asegura que ocupen todo el ancho disponible */
+  }
+}
